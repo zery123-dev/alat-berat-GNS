@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistem Monitoring Jalur Alat Berat</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <img src="img/excavator.png" alt="Logo" class="logo">
+      <h1>Sistem Monitoring Jalur Alat Berat</h1>
+    </div>
+  </header>
+
+  <main>
+    <aside class="sidebar">
+      <h2>📋 Kontrol Peta</h2>
+
+      <div class="equipment-control">
+        <select id="equipmentSelect" class="btn blue">
+          <option value="" disabled selected>Pilih Alat Berat</option>
+        </select>
+        <button id="addEquipment" class="btn green">➕ Tambah Excavator</button>
+      </div>
+
+      <div class="buttons">
+        <button id="stopMove" class="btn orange">⏸️ Berhenti Semua</button>
+        <button id="reset" class="btn gray">🧹 Reset Semua</button>
+      </div>
+
+      <h3>🗂 Daftar Excavator</h3>
+      <div id="equipmentList"></div>
+
+      <h3>🗺️ Jenis Peta</h3>
+      <select id="mapType">
+        <option value="topografi">Topografi</option>
+        <option value="satellite">Satelit</option>
+        <option value="street">Jalan</option>
+      </select>
+
+      <div class="info">
+        <p><b>Total Titik:</b> <span id="totalPoints">0</span></p>
+        <p><b>Total Jarak:</b> <span id="totalDistance">0</span> meter</p>
+        <p id="status">Belum ada titik.</p>
+      </div>
+    </aside>
+
+    <section id="map"></section>
+  </main>
+
+  <footer>
+    © 2025 Sistem Monitoring Alat Berat
+  </footer>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@turf/turf@6/turf.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f3f6fc;
+}
+
+header {
+  background-color: #3498db;
+  color: white;
+  padding: 8px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 35px;
+  height: 35px;
+}
+
+main {
+  display: flex;
+  height: calc(100vh - 80px);
+}
+
+.sidebar {
+  width: 300px;
+  background: #ffffff;
+  padding: 15px;
+  overflow-y: auto;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+#map {
+  flex: 1;
+}
+
+h2, h3 {
+  margin-top: 10px;
+  color: #2c3e50;
+}
+
+.btn {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.green { background: #27ae60; color: white; }
+.orange { background: #e67e22; color: white; }
+.gray { background: #95a5a6; color: white; }
+.blue { background: #2980b9; color: white; }
+
+.equipment-card {
+  background: #f9f9f9;
+  border-radius: 8px;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.btn-card {
+  margin: 2px;
+  font-size: 12px;
+  padding: 3px 6px;
+  border: none;
+  border-radius: 4px;
+  background: #3498db;
+  color: white;
+  cursor: pointer;
+}
+
+.card-info {
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+footer {
+  text-align: center;
+  padding: 8px;
+  font-size: 13px;
+  background: #ecf0f1;
+  color: #555;
+}
